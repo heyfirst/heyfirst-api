@@ -3,4 +3,4 @@ set -e
 
 # Start app
 echo "### Starting app ###"
-node ./apps/heyfirst-api/dist/index.js
+node ./dist/index.js
