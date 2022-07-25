@@ -1,11 +1,7 @@
 FROM node:16-alpine3.15 as builder
 
 WORKDIR /usr/app
-RUN npm install -g pnpm
-
-COPY package.json .
-COPY pnpm-lock.yaml .
-COPY pnpm-workspace.yaml .
+RUN npm install --location=global pnpm
 
 COPY . .
 
