@@ -7,14 +7,14 @@ specifiers:
   '@prisma/client': 3.14.0
   '@swc/cli': 0.1.57
   '@swc/core': 1.3.3
-  '@types/node': 17.0.25
+  '@types/node': 18.11.9
   axios: ^0.27.2
   badge-maker: 3.3.1
   dotenv: 16.0.1
   fastify: 4.3.0
   nodemon: 2.0.19
-  pino-pretty: 8.1.0
-  prisma: 3.14.0
+  pino-pretty: 9.1.1
+  prisma: 4.5.0
   ts-node: 10.9.1
   tsconfig-paths: 4.0.0
   typescript: 4.7.4
@@ -23,7 +23,7 @@ dependencies:
   '@fastify/cookie': 7.4.0
   '@fastify/cors': 8.0.0
   '@fastify/helmet': 9.1.0
-  '@prisma/client': 3.14.0_prisma@3.14.0
+  '@prisma/client': 3.14.0_prisma@4.5.0
   axios: 0.27.2
   badge-maker: 3.3.1
   dotenv: 16.0.1
@@ -32,11 +32,11 @@ dependencies:
 devDependencies:
   '@swc/cli': 0.1.57_@swc+core@1.3.3
   '@swc/core': 1.3.3
-  '@types/node': 17.0.25
+  '@types/node': 18.11.9
   nodemon: 2.0.19
-  pino-pretty: 8.1.0
-  prisma: 3.14.0
-  ts-node: 10.9.1_jjuiw4izbsjwx2yocu3nk3bb2u
+  pino-pretty: 9.1.1
+  prisma: 4.5.0
+  ts-node: 10.9.1_yjksqlk744zxzo6usxka77mnbe
   tsconfig-paths: 4.0.0
   typescript: 4.7.4
 
@@ -129,7 +129,7 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@prisma/client/3.14.0_prisma@3.14.0:
+  /@prisma/client/3.14.0_prisma@4.5.0:
     resolution: {integrity: sha512-atb41UpgTR1MCst0VIbiHTMw8lmXnwUvE1KyUCAkq08+wJyjRE78Due+nSf+7uwqQn+fBFYVmoojtinhlLOSaA==}
     engines: {node: '>=12.6'}
     requiresBuild: true
@@ -140,15 +140,15 @@ packages:
         optional: true
     dependencies:
       '@prisma/engines-version': 3.14.0-36.2b0c12756921c891fec4f68d9444e18c7d5d4a6a
-      prisma: 3.14.0
+      prisma: 4.5.0
     dev: false
 
   /@prisma/engines-version/3.14.0-36.2b0c12756921c891fec4f68d9444e18c7d5d4a6a:
     resolution: {integrity: sha512-D+yHzq4a2r2Rrd0ZOW/mTZbgDIkUkD8ofKgusEI1xPiZz60Daks+UM7Me2ty5FzH3p/TgyhBpRrfIHx+ha20RQ==}
     dev: false
 
-  /@prisma/engines/3.14.0-36.2b0c12756921c891fec4f68d9444e18c7d5d4a6a:
-    resolution: {integrity: sha512-LwZvI3FY6f43xFjQNRuE10JM5R8vJzFTSmbV9X0Wuhv9kscLkjRlZt0BEoiHmO+2HA3B3xxbMfB5du7ZoSFXGg==}
+  /@prisma/engines/4.5.0:
+    resolution: {integrity: sha512-4t9ir2SbQQr/wMCNU4YpHWp5hU14J2m3wHUZnGJPpmBF8YtkisxyVyQsKd1e6FyLTaGq8LOLhm6VLYHKqKNm+g==}
     requiresBuild: true
 
   /@swc/cli/0.1.57_@swc+core@1.3.3:
@@ -347,8 +347,8 @@ packages:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
     dev: true
 
-  /@types/node/17.0.25:
-    resolution: {integrity: sha512-wANk6fBrUwdpY4isjWrKTufkrXdu1D2YHCot2fD/DfWxF5sMrVSA+KN7ydckvaTCh0HiqX9IVl0L5/ZoXg5M7w==}
+  /@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
     dev: true
 
   /abbrev/1.1.1:
@@ -608,8 +608,8 @@ packages:
     resolution: {integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==}
     engines: {node: '>=6'}
 
-  /fast-copy/2.1.3:
-    resolution: {integrity: sha512-LDzYKNTHhD+XOp8wGMuCkY4eTxFZOOycmpwLBiuF3r3OjOmZnURRD8t2dUAbmKuXGbo/MGggwbSjcBdp8QT0+g==}
+  /fast-copy/3.0.0:
+    resolution: {integrity: sha512-4HzS+9pQ5Yxtv13Lhs1Z1unMXamBdn5nA4bEi1abYpDNSpSp7ODYQ1KPMF6nTatfEzgH6/zPvXKU1zvHiUjWlA==}
     dev: true
 
   /fast-deep-equal/3.1.3:
@@ -928,13 +928,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /on-exit-leak-free/1.0.0:
-    resolution: {integrity: sha512-Ve8ubhrXRdnuCJ5bQSQpP3uaV43K1PMcOfSRC1pqHgRZommXCgsXwh08jVC5NpjwScE23BPDwDvVg4cov3mwjw==}
-    dev: true
-
   /on-exit-leak-free/2.1.0:
     resolution: {integrity: sha512-VuCaZZAjReZ3vUwgOB8LxAosIurDiAW0s13rI1YwmaP++jvcxP77AWoQvenZebpCA2m8WC1/EosPYPMjnRAp/w==}
-    dev: false
 
   /once/1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
@@ -953,18 +948,18 @@ packages:
       readable-stream: 4.1.0
       split2: 4.1.0
 
-  /pino-pretty/8.1.0:
-    resolution: {integrity: sha512-oKfI8qKXR2a3haHs/X8iB6QSnWLqoOGAjwxIAXem4+XOGIGNw7IKpozId1uE7j89Rj46HIfWnGbAgmQmr8+yRw==}
+  /pino-pretty/9.1.1:
+    resolution: {integrity: sha512-iJrnjgR4FWQIXZkUF48oNgoRI9BpyMhaEmihonHeCnZ6F50ZHAS4YGfGBT/ZVNsPmd+hzkIPGzjKdY08+/yAXw==}
     hasBin: true
     dependencies:
       colorette: 2.0.19
       dateformat: 4.6.3
-      fast-copy: 2.1.3
+      fast-copy: 3.0.0
       fast-safe-stringify: 2.1.1
       help-me: 4.0.1
       joycon: 3.1.1
       minimist: 1.2.6
-      on-exit-leak-free: 1.0.0
+      on-exit-leak-free: 2.1.0
       pino-abstract-transport: 1.0.0
       pump: 3.0.0
       readable-stream: 4.1.0
@@ -994,13 +989,13 @@ packages:
       thread-stream: 2.0.0
     dev: false
 
-  /prisma/3.14.0:
-    resolution: {integrity: sha512-l9MOgNCn/paDE+i1K2fp9NZ+Du4trzPTJsGkaQHVBufTGqzoYHuNk8JfzXuIn0Gte6/ZjyKj652Jq/Lc1tp2yw==}
-    engines: {node: '>=12.6'}
+  /prisma/4.5.0:
+    resolution: {integrity: sha512-9Aeg4qiKlv9Wsjz4NO8k2CzRzlvS3A4FYVJ5+28sBBZ0eEwbiVOE/Jj7v6rZC1tFW2s4GSICQOAyuOjc6WsNew==}
+    engines: {node: '>=14.17'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@prisma/engines': 3.14.0-36.2b0c12756921c891fec4f68d9444e18c7d5d4a6a
+      '@prisma/engines': 4.5.0
 
   /process-warning/2.0.0:
     resolution: {integrity: sha512-+MmoAXoUX+VTHAlwns0h+kFUWFs/3FZy+ZuchkgjyOu3oioLAo2LB5aCfKPh2+P9O18i3m43tUEv3YqttSy0Ww==}
@@ -1203,7 +1198,7 @@ packages:
       nopt: 1.0.10
     dev: true
 
-  /ts-node/10.9.1_jjuiw4izbsjwx2yocu3nk3bb2u:
+  /ts-node/10.9.1_yjksqlk744zxzo6usxka77mnbe:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -1223,7 +1218,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 17.0.25
+      '@types/node': 18.11.9
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
