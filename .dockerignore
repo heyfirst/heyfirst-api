@@ -1,0 +1,6 @@
+# flyctl launch added from .gitignore
+**/node_modules
+**/prisma/generated/prisma-client-js
+**/.DS_Store
+**/dist
+**/.env

@@ -1,31 +1,55 @@
-FROM node:16-alpine3.15 as builder
+# base node image
+FROM node:18-bullseye-slim AS base
 
-WORKDIR /usr/app
+# set for base and all that inherit from it
+# Install openssl for Prisma
+RUN apt-get update && apt-get install -y openssl ca-certificates iptables
 RUN npm install --location=global pnpm
 
-COPY . .
+# [deps] Install all node_modules, including dev dependencies
+FROM base AS deps
 
-# install dependencies
-RUN pnpm install --frozen-lockfile
+RUN mkdir /app
+WORKDIR /app
 
-# generate prisma-client-js
-RUN pnpm run db:generate
+ADD package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile --ignore-scripts
 
-# compile ts to js and minify
+# [production-deps] Setup production node_modules
+FROM base AS production-deps
+
+RUN mkdir /app
+WORKDIR /app
+
+COPY --from=deps /app/node_modules /app/node_modules
+ADD package.json pnpm-lock.yaml ./
+RUN pnpm prune --prod
+
+# [build]  Build the app
+FROM base AS build
+
+RUN mkdir /app
+WORKDIR /app
+
+COPY --from=deps /app/node_modules /app/node_modules
+
+ADD . .
+RUN pnpx prisma generate
 RUN pnpm run build
 
-# prune all unnecessary modules
-RUN pnpm prune --production
+# [main] Finally, build the production image with minimal footprint
+FROM base
 
-# * ====================
-FROM node:16-alpine3.15 as main
+ENV NODE_ENV=production
 
-WORKDIR /usr/app/
+RUN mkdir /app
+WORKDIR /app
 
-COPY --from=builder /usr/app/node_modules node_modules
-COPY --from=builder /usr/app/prisma/ prisma/
-COPY --from=builder /usr/app/dist dist
-COPY --from=builder /usr/app/script script
+COPY --from=production-deps /app/node_modules /app/node_modules
+COPY --from=build /app/node_modules/.prisma /app/node_modules/.prisma
+COPY --from=build /app/dist /app/dist
+
+ADD . .
 
 ENV NODE_ENV production
 
