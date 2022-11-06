@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fastify/cookie': 7.4.0
-  '@fastify/cors': 8.0.0
+  '@fastify/cors': 8.1.1
   '@fastify/helmet': 9.1.0
   '@prisma/client': 3.14.0
   '@swc/cli': 0.1.57
@@ -21,7 +21,7 @@ specifiers:
 
 dependencies:
   '@fastify/cookie': 7.4.0
-  '@fastify/cors': 8.0.0
+  '@fastify/cors': 8.1.1
   '@fastify/helmet': 9.1.0
   '@prisma/client': 3.14.0_prisma@3.14.0
   axios: 0.27.2
@@ -64,11 +64,11 @@ packages:
       fastify-plugin: 4.1.0
     dev: false
 
-  /@fastify/cors/8.0.0:
-    resolution: {integrity: sha512-mB2GsA7aVwq7XG6B2OM1FMpcaiXY69ZbM1h/xDJxLEVu5ITGcs5XYrBIYTMNU2dQtzO6mzXhGd2dEKaCnB7UgQ==}
+  /@fastify/cors/8.1.1:
+    resolution: {integrity: sha512-YpkNonoJtn7Zcq2uyh0bFPcjW+njWZ9rz5gl8o5NDUvpBIPjg5m/3IHvsq91Pp/fFhLL7XgVOUyk+gMl8tb5FQ==}
     dependencies:
-      fastify-plugin: 3.0.1
-      vary: 1.1.2
+      fastify-plugin: 4.1.0
+      mnemonist: 0.39.4
     dev: false
 
   /@fastify/deepmerge/1.1.0:
@@ -865,6 +865,12 @@ packages:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
 
+  /mnemonist/0.39.4:
+    resolution: {integrity: sha512-WlE2Ugow1ENH5un0OthjsjpJb/nbkUQ/jUOHtZUqh58JNzEHNxkm0tIFRAoExsANW/fTN/rxBUMFY/7jPDvxdQ==}
+    dependencies:
+      obliterator: 2.0.4
+    dev: false
+
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: false
@@ -902,6 +908,10 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /obliterator/2.0.4:
+    resolution: {integrity: sha512-lgHwxlxV1qIg1Eap7LgIeoBWIMFibOjbrYPIPJZcI1mmGAI2m3lNYpK12Y+GBdPQ0U1hRwSord7GIaawz962qQ==}
+    dev: false
 
   /on-exit-leak-free/1.0.0:
     resolution: {integrity: sha512-Ve8ubhrXRdnuCJ5bQSQpP3uaV43K1PMcOfSRC1pqHgRZommXCgsXwh08jVC5NpjwScE23BPDwDvVg4cov3mwjw==}
@@ -1241,11 +1251,6 @@ packages:
   /v8-compile-cache-lib/3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
     dev: true
-
-  /vary/1.1.2:
-    resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
-    engines: {node: '>= 0.8'}
-    dev: false
 
   /wrappy/1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
