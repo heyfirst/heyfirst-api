@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fastify/cookie": "7.4.0",
+    "@fastify/cookie": "8.3.0",
     "@fastify/cors": "8.1.1",
     "@fastify/helmet": "9.1.0",
     "@prisma/client": "3.15.2",

@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fastify/cookie': 7.4.0
+  '@fastify/cookie': 8.3.0
   '@fastify/cors': 8.1.1
   '@fastify/helmet': 9.1.0
   '@prisma/client': 3.15.2
@@ -20,7 +20,7 @@ specifiers:
   typescript: 4.8.4
 
 dependencies:
-  '@fastify/cookie': 7.4.0
+  '@fastify/cookie': 8.3.0
   '@fastify/cors': 8.1.1
   '@fastify/helmet': 9.1.0
   '@prisma/client': 3.15.2_prisma@4.5.0
@@ -57,8 +57,8 @@ packages:
       fast-uri: 2.1.0
     dev: false
 
-  /@fastify/cookie/7.4.0:
-    resolution: {integrity: sha512-82MUHsZJY/Wl+rG2E+bnYxSifOtNRChm2M+8xnZHnKtYmyNfLvy/37ElCtqD3KzUyTycR+GE7v7uiDD/tY4TkA==}
+  /@fastify/cookie/8.3.0:
+    resolution: {integrity: sha512-P9hY9GO11L20TnZ33XN3i0bt+3x0zaT7S0ohAzWO950E9PB2xnNhLYzPFJIGFi5AVN0yr5+/iZhWxeYvR6KCzg==}
     dependencies:
       cookie: 0.5.0
       fastify-plugin: 4.1.0
