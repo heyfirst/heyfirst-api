@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@fastify/cookie': 7.4.0
   '@fastify/cors': 8.1.1
-  '@fastify/helmet': 9.1.0
+  '@fastify/helmet': 10.1.0
   '@prisma/client': 3.15.2
   '@swc/cli': 0.1.57
   '@swc/core': 1.3.14
@@ -22,7 +22,7 @@ specifiers:
 dependencies:
   '@fastify/cookie': 7.4.0
   '@fastify/cors': 8.1.1
-  '@fastify/helmet': 9.1.0
+  '@fastify/helmet': 10.1.0
   '@prisma/client': 3.15.2_prisma@4.5.0
   axios: 0.27.2
   badge-maker: 3.3.1
@@ -85,11 +85,11 @@ packages:
       fast-json-stringify: 5.1.0
     dev: false
 
-  /@fastify/helmet/9.1.0:
-    resolution: {integrity: sha512-wAtu/38t90vH46GdLM6pVi8tM1HZXb6PRdLTNBo9pudSfSw5i5Ogm8Hq1Nx337WjgSOeU6MefaTd+1avlOlCDQ==}
+  /@fastify/helmet/10.1.0:
+    resolution: {integrity: sha512-v7QJPYf1uVcCwzyHzkDGcHTqDPscXj/61JKxOdvczyDPAKTxSeb9Sc2OBActXaj7zUELiAdgnkKkzNwmCNzBLQ==}
     dependencies:
-      fastify-plugin: 3.0.1
-      helmet: 5.1.1
+      fastify-plugin: 4.3.0
+      helmet: 6.0.0
     dev: false
 
   /@jridgewell/resolve-uri/3.1.0:
@@ -596,12 +596,12 @@ packages:
     resolution: {integrity: sha512-qKRta6N7BWEFVlyonVY/V+BMLgFqktCUV0QjT259ekAIlbVrMaFnFLxJ4s/JPl4tou56S1BzPufI60bLe29fHA==}
     dev: false
 
-  /fastify-plugin/3.0.1:
-    resolution: {integrity: sha512-qKcDXmuZadJqdTm6vlCqioEbyewF60b/0LOFCcYN1B6BIZGlYJumWWOYs70SFYLDAH4YqdE1cxH/RKMG7rFxgA==}
-    dev: false
-
   /fastify-plugin/4.1.0:
     resolution: {integrity: sha512-Mf6lkbxHtFgI4sVaC0P/7sqlBvdpoyEUaOCD0cyKpqxjsdN+3EdD/FfSHByb7uXqxYu/DilH9Lb6mTCumN9TQQ==}
+    dev: false
+
+  /fastify-plugin/4.3.0:
+    resolution: {integrity: sha512-M3+i368lV0OYTJ5TfClIoPKEKSOF7112iiPdwgfSR0gN98BjA1Nk+c6oBHtfcVt9KiMxl+EQKHC1QNWo3ZOpYQ==}
     dev: false
 
   /fastify/4.3.0:
@@ -704,9 +704,9 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /helmet/5.1.1:
-    resolution: {integrity: sha512-/yX0oVZBggA9cLJh8aw3PPCfedBnbd7J2aowjzsaWwZh7/UFY0nccn/aHAggIgWUFfnykX8GKd3a1pSbrmlcVQ==}
-    engines: {node: '>=12.0.0'}
+  /helmet/6.0.0:
+    resolution: {integrity: sha512-FO9RpR1wNJepH/GbLPQVtkE2eESglXL641p7SdyoT4LngHFJcZheHMoyUcjCZF4qpuMMO1u5q6RK0l9Ux8JBcg==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /help-me/4.0.1:
