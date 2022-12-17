@@ -1,5 +1,5 @@
 # base node image
-FROM node:18-bullseye-slim AS base
+FROM node:19-bullseye-slim AS base
 
 # set for base and all that inherit from it
 # Install openssl for Prisma
